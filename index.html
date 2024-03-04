@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="container">
+      <header>
+        <h1>Inscrição para o Evento Tech 2024</h1>
+      </header>
+      
+      <form>
+        <fieldset>
+          <legend>Campos marcados com * são Obrigatorios</legend>
+          <br/>
+
+          <div id="part-1">
+            <h2>Informações pessoais</h2>
+            <label for="first-name">Primeiro Nome</label>
+            <input type="text" name="first-name" id="first-name" required>
+            <br/>
+            <label for="last-name">Ultimo Nome</label>
+            <input type="text" name="last-name" id="last-name" required> 
+            <br/>
+            <label for="birthdate">Data de Nascimento</label>
+            <input type="date" name="birthdate" min="1917-01-01" id="birthdate" required>
+            <br/>
+            <label for="age">Idade</label>
+            <input type="number" name="age" min="0" max="100" id="age" required>
+            <br/>
+            <label for="gender">Genero</label>
+            <br/>
+            <input type="radio" name="gender" value="mulher" id="gender" required>Mulher
+            <br/>
+            <input type="radio" name="gender" value="homem" required>Homem
+            <br/>
+            <input type="radio" name="gender" value="other" required>Outros
+            <br/><br/>
+            <label for="prefEvent"><h2>Preferencias do Evento</h2></label>
+            <br/>
+            <select name="prefEvent" id="prefEvent" required>
+              <!-- https://www.freeformatter.com/iso-country-list-html-select.html -->
+              <option value="" label="Selecione um tema de interesse" selected="selected"></option>
+              <option value="AF">Front-End</option>
+              <option value="AX">Back-End</option>
+              <option value="AL">Full-Stack</option>
+              <option value="DZ">Ciência de Dados</option>
+              <option value="AS">DevOps</option>
+              <option value="AD">Infra</option>
+              <option value="AO">Automação</option>
+            </select>
+          </div>
+          <br/>
+
+          <div id="part-2">
+            <h2>Crie sua Conta</h2>
+            <label for="email">E-mail para cadastro</label>
+            <input type="email" name="email" placeholder="conta@email.com" id="email" required>
+            <label for="password">Digte uma Senha</label>
+            <input type="password" name="password" id="password" required>
+            <label for="password">Confirme a sua Senha</label>
+            <input type="password" name="password" id="password" required>
+          </div>
+          
+
+          <div id="part-3">
+            <h2>Submissão de Apresentação:</h2>
+            <label for="rating">Resumo da sua Apresentação</label>
+            <br/>
+            <textarea rows="5" cols="50" id="message" tabindex="-1"></textarea>
+          </div>
+
+          <br/><br/>
+          <input type="submit" id="submitButton" name="submitButton" value="Enviar">
+          <input type="reset" id="resetButton" value="Limpar" tabindex="-1">
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
+    
